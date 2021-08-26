@@ -2,10 +2,7 @@
 
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-### Hola colegas 👋
-
-
-Gusto de visitar el perfil de 👨‍🏫 ✨ Alonso Gro. ✨.
+### Hola! 👋
 
 Atendiendo estudiantes de PFLC y TecTijuana:
 
@@ -18,17 +15,7 @@ Atendiendo estudiantes de PFLC y TecTijuana:
 - 😄 Y con Github Classroom apoyar al estudiante para ser efectivo en lo requerido para producir resultados al momento y diversificar en los sistemas desktop, cloud computing y embedded 
 - ⚡ Sabias: Soy exalumno de la PFLC y del TEC !
 
-Licenciamiento para los cursos:
-- Apple University Programm beca de 200 dispositivo iOS
-- Amazon Web Services AWSEducate beca de $50 dlls estudiantes y $200 dlls a 👩‍🏫 docentes 
-- Jetbrains Suite completo de beca $450 dlls
 
-
-Inventario maker para cursos
-- Arduino clasico
-- STM32
-- RaspberryPi 
-- kit de sensores y herramientas soldar
 
 
 
