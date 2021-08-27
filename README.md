@@ -2,9 +2,9 @@
 
 <a href="http://cooltext.com" target="_top"><img src="https://cooltext.com/images/ct_pixel.gif" width="80" height="15" alt="Cool Text: Logo and Graphics Generator" border="0" /></a>
 
-### Hola! 👋
+## Hola! 👋
 
-Estudiante de la carrera de Ing. en Sistemas Computacionales
+*Estudiante de la carrera de Ing. en Sistemas Computacionales*
 
 - 🖥 ... y capacitación al trabajo con ITICS
 - 📲 Diversas materias el TecNM para ISC, LI y ITICS
