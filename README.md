@@ -10,7 +10,8 @@
   * Desarrollo de software
   * Música
   * Ciencia Ficción
-  * Videojuegos 
+  * Videojuegos
+  * Deportes 
 
 
 **Horario**
