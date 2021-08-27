@@ -4,9 +4,8 @@
 
 ### Hola! 👋
 
-Atendiendo estudiantes de PFLC y TecTijuana:
+Estudiante de la carrera de Ing. en Sistemas Computacionales
 
-- 🔭 En bachillerato con informática 1 y 2 básica 
 - 🖥 ... y capacitación al trabajo con ITICS
 - 📲 Diversas materias el TecNM para ISC, LI y ITICS
 - 🤔 Considero GitHub la herramienta excelente para el nuevo ingeniero.
@@ -16,16 +15,14 @@ Atendiendo estudiantes de PFLC y TecTijuana:
 - ⚡ Sabias: Soy exalumno de la PFLC y del TEC !
 
 
+Horario
 
-
-
-Ejemplo Tablas en MD
-
-| Sensores 	|  X 	|  Y  	|
-|----------	|:--:	|:---:	|
-| Co2      	| 20 	|  30 	|
-| temp     	| 11 	|  27 	|
-| O2       	| 22 	| 333 	|
+|     	| Lunes                                       	| Martes                	| Miércoles             	| Jueves                	| Viernes               	|
+|-----	|---------------------------------------------	|-----------------------	|-----------------------	|-----------------------	|-----------------------	|
+| 2-3 	| Lenguajes de interfaz                       	| Lenguajes de interfaz 	| Lenguajes de interfaz 	| Lenguajes de interfaz 	|                       	|
+| 4-5 	| Tópicos Avanzados de Desarrollo de Software 	| TADS                  	| TADS                  	| TADS                  	| TADS                  	|
+| 5-6 	| Lenguajes y autómatas                       	| Lenguajes y autómatas 	| Lenguajes y autómatas 	| Lenguajes y autómatas 	| Lenguajes y autómatas 	|
+| 7-8 	| Plan de negocios                            	| Plan de negocios      	| Plan de negocios      	| Plan de negocios      	| Plan de negocios      	|
 
 Guias:
 https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
