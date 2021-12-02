@@ -9,7 +9,7 @@
 ##   Profesor: MC. René Solis Reyes
 ##     Semestre ago - dic 2021
 ----
-# Práctica: Ejercicios del cuadernillo "Prácticas de ASM RaspberryPi"
+# Ejercicios del cuadernillo "Prácticas de ASM RaspberryPi"
 ----
 
 # Alumno: Guerrero Montaño Alonso E. - 18211240
