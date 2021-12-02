@@ -1,4 +1,4 @@
-![](imagen/portadatcnm.png)
+![](https://github.com/tectijuana/programasdecpp-agro07/blob/63a183d947300d5911d3b40f6ff39750001fed34/imagen/portadatcnm.png)
 
 #    Tecnológico Nacional de México
 #   Instituto Tecnológico de Tijuana
