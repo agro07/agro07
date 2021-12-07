@@ -27,4 +27,4 @@ main:
 	bl printf	/* salta a la funcion printf para imprimir var1 y toma el valor a imprimir de r1 */
 	cmp r4, #5	/* compara el valor de r4 con 5 */
 	bne .L2	/* si no son iguales, regresa a la etiqueta .L2*/
-	pop {r4, pc}	/* carga valores de 4 y pc ---> en vez de pop{r4, lr} bx lr*/
+	pop {r4, pc}	/* carga valores de 4 y pc ---> en vez de pop{r4, lr} bx lr / instruccion de retorno*/
