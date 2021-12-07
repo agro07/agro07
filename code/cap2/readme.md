@@ -1,3 +1,2 @@
-# Ejercicios del capítulo 2
+## Ejercicios del capítulo 2
 
-# Guerrero Montaño Alonso E.
