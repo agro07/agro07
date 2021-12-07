@@ -29,10 +29,10 @@ bucle:
 	ldr r3, [r2], #4	/*carga primer valor de r2 a r3 y suma 4 a r2*/
 	add r1, r1, r3	/* r1 = r1 + r3 */
 	subs r0, r0, #1	/* r0 = r0 - 1 y compara si el resultado es igual a 0*/
-	bne bucle /*  si la resta no es igual a 0 regresa a la etiqueta bucle */
+	bne bucle	/* si la resta no es igual a 0 regresa a la etiqueta bucle */
 
-	ldr r0, =var1 /* carga var1 en r0 */
-	bl printf /* ejecuta el metodo printf */
+	ldr r0, =var1	/* carga var1 en r0 */
+	bl printf	/* ejecuta el metodo printf */
 	
 	/* recuperamos registros y salimos */
 	pop {r4, lr}	
