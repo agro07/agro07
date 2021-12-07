@@ -21,6 +21,12 @@ tipos4:	tipos4.o
 
 tipos4.o:	tipos4.s
 	as -g -o tipos4.o tipos4.s
+	
+tipos6:	tipos6.o
+	g++ tipos6.o -o tipos6
+
+tipos6.o:	tipos6.s
+	as -g -o tipos6.o tipos6.s
 
 clean:
-	rm tipos2.o tipos2 tipos3a.o tipos3a tipos3b.o tipos3b tipos4.o tipos4
+	rm tipos2.o tipos2 tipos3a.o tipos3a tipos3b.o tipos3b tipos4.o tipos4 tipos6.o tipos6
