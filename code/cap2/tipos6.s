@@ -28,16 +28,16 @@ main:
 /* bucle que hace la suma */
 bucle:
 	ldr r0, [r4], #4	/*carga primer valor de r4 a r0 y suma 4 a r4*/
-	mov r1, r0, ASR #31 /* se extiende el signo de la instruccion anterior a los registros r1:r0 */
+	mov r1, r0, ASR #31 	/* se extiende el signo de la instruccion anterior a los registros r1:r0 */
 	
 	/* suma r3:r2 = r3:r2 + r1:r0 */
-	adds r2, r2, r0 /* se suman los 32 bits inferiores + posible acarreo */
-	adc r3, r3, r1 /*suma de 32 bits superiores + acarreo anterior */
+	adds r2, r2, r0	/* se suman los 32 bits inferiores + posible acarreo */
+	adc r3, r3, r1	/*suma de 32 bits superiores + acarreo anterior */
 	subs r5, r5, #1	/* r5 = r5 - 1 y compara si el resultado es igual a 0*/
-	bne bucle /*  si la resta no es igual a 0 regresa a la etiqueta bucle */
+	bne bucle	/* si la resta no es igual a 0 regresa a la etiqueta bucle */
 
-	ldr r0, =var1 /* carga var1 en r0 */
-	bl printf /* ejecuta el metodo printf */
+	ldr r0, =var1	/* carga var1 en r0 */
+	bl printf	/* ejecuta el metodo printf */
 	
 	/* recuperamos registros y salimos */
 	pop {r4, r5, r6, lr}	
