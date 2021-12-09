@@ -28,4 +28,4 @@ fibo :
 
 	add sp, #length 	@ libero espacio de v.locales
 	pop {lr} 		@ recupero registros, sólo lr
-	bx lr			@ salgo de la funci ón
+	bx lr			@ salgo de la función
