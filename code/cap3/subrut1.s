@@ -15,9 +15,9 @@ const1 :	.word	1103515245
 const2 :	.word	12345
 
 .text
-.global myrand, mysrand
+.global main
 
-myrand:
+main:
 	ldr r1, =seed		@ leo puntero a seed
 	ldr r0, [r1]		@ leo valor de seed
 	ldr r2, [r1, #4]	@ leo const1 en r2
