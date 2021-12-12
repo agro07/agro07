@@ -18,12 +18,12 @@ cadenafin :
 .global main
 
 main:	
-	push {r7, lr}		/* preservamos registros */
+	push {r7, lr}			/* preservamos registros */
 	mov r0, #1			/* salida estándar*/
-	ldr r1, =cadena		/* cadena a enviar*/
+	ldr r1, =cadena			/* cadena a enviar*/
 	mov r2, #cadenafin-cadena	/* longitud */ 
 	mov r7, #4			/*seleccionamos la*/
 	swi #0				/* llamada al sistema 'write'*/
 	mov r0, #0			/* devolvemos ok*/
-	pop {r7, lr}		/* recuperamos registros*/
+	pop {r7, lr}			/* recuperamos registros*/
 	bx lr				/* salimos de main */
