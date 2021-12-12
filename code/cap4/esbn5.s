@@ -14,7 +14,7 @@
 	.set GPSETO, 	0x1c
 	.set GPCLRO,	0x28
 	.set STBASE,	0x20003000
-	.set STCLO,		0x04
+	.set STCLO,	0x04
 
 .text
 	ldr r0, =GPBASE
@@ -28,19 +28,19 @@
 
 bucle:
 	bl espera		@ salta a rutina de espera
-	str r1, [r0, #GPSETO] @ Enciende
+	str r1, [r0, #GPSETO]	@ Enciende
 	bl espera
-	str r1, [r0, #GPCLRO] @ Apaga
+	str r1, [r0, #GPCLRO] 	@ Apaga
 	b	bucle
 	
 /* rutina que espera medio segundo */
 espera:
 	ldr r3, [r2, #STCLO]	@ Lee contador en r3
 	ldr r4, =500000
-	add r4, r3				@ r4 = r3 + medio millón
+	add r4, r3		@ r4 = r3 + medio millón
 
 ret1:
 	ldr r3, [r2, #STCLO]
-	cmp r3, r4				@ Leemos CLO hasta alcanzar
-	bne ret1				@ el valor de r4
+	cmp r3, r4		@ Leemos CLO hasta alcanzar
+	bne ret1		@ el valor de r4
 	bx lr
