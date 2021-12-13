@@ -12,8 +12,8 @@
 .global main
 
 main:
-     mov   r0, #2  /* set up r0 */
-     push  {r0}    /* save r0 onto the stack */
-     mov   r0, #3  /* overwrite r0 */
-     pop   {r0}    /* restore r0 to it's initial state */
-     bx    lr      /* finish the program */
+     mov   r0, #2  /* asignar un valor a r0 (2) */
+     push  {r0}    /* guardar r0 en la pila o stack */
+     mov   r0, #3  /* asignar un nuevo valor a r0 (3) */
+     pop   {r0}    /* regresar r0 a su estado inicial (2) */
+     bx    lr      /* terminar programa */
