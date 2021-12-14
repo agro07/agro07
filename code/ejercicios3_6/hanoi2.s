@@ -8,12 +8,6 @@
 	Fecha	13/Dic/2021
 */
 
-@   hanoi2.s
-@   D. Thiebaut
-@   Recursive towers of Hanoi
-@   Prompts the user for the number of disks to 
-@   move.
-
 @ ---------------------------------------
 @	Data Section
 @ ---------------------------------------
@@ -23,11 +17,10 @@
 prompt:	.asciz	"How many disk do you want to move? "
 format:	.asciz	"%d"	
 string: .asciz  "move disk from %c to %c\n\0"
-peg1:	.int	'A'		@ name of Peg 1, must be a char
+peg1:	.int	'A'		@ vlavijas
 peg2:	.int	'B'
 peg3:	.int	'C'
-n:	.int	4		@ number of disks to move
-
+n:	.int	4		@ número de discos a mover
 	
 @ ---------------------------------------
 @	Code Section
@@ -40,18 +33,17 @@ n:	.int	4		@ number of disks to move
 
 @ ---------------------------------------
 @ getNumberOfDisks():
-@ prompts the user and puts the number
-@ in n.
+@ Pregunta al usuario y asigna el número de discos a r1
 getNumberOfDisks:
-	push 	{ip, lr}	@ push return address + dummy register
-				@ for alignment
+	push 	{ip, lr}	@ salvamos registros
+				
 
-	ldr	r0, =prompt	@ print the prompt
+	ldr	r0, =prompt	@ despliega prompt
 	bl	printf
 
-	ldr     r0, =format	@ call scanf, and pass address of format
-	ldr	r1, =n		@ string and address of n in r0, and r1,
-	bl	scanf		@ respectively.
+	ldr     r0, =format	@ llama a scanf y asigna la direccion de memoria de format
+	ldr	r1, =n		@ y n a r0 y r1, respectivamente.
+	bl	scanf		
 
         pop 	{ip, pc}
 	
@@ -82,12 +74,12 @@ move1Disk:
 
 moveN_1Disks:	
 	@ moveDisks( n-1, Source, Extra, Dest )
-	mov	r8, r7		@ swap Dest & Extra
+	mov	r8, r7		@ intercambia Dest & Extra
 	mov	r7, r6
 	mov	r6, r8
 	sub	r4, #1
 	bl	moveDisks
-	mov	r8, r7		@ unswap Dest & Extra
+	mov	r8, r7		@ regresa a sus reg originales Dest & Extra
 	mov	r7, r6
 	mov	r6, r8
 
@@ -98,7 +90,7 @@ moveN_1Disks:
 	bl	printf
 
 	@ moveDisks( n-1, Extra, Dest, Source )	
-	mov	r8, r5		@ swap Source and Extra, i.e. r5 and r7.
+	mov	r8, r5		@ intercambia Source y Extra,  r5 y r7.
 	mov	r5, r7
 	mov	r7, r8
 	bl	moveDisks
@@ -110,22 +102,21 @@ endMoveDisk:
 @ ---------------------------------------
 @ main: call moveDisks( n, peg1, peg2, peg3 )
 
-main:   push 	{ip, lr}	@ push return address + dummy register
-				@ for alignment
+main:   push 	{ip, lr}	@ salvar registros
 
 	bl	getNumberOfDisks
-				@ get n
+				@ obtener n
 	
-	ldr	r4, =n		@ pass n
+	ldr	r4, =n		@ asignar n a r4
 	ldr	r4, [r4]
-	ldr	r5, =peg1	@ pass peg1
+	ldr	r5, =peg1	@ asignar peg1 a r5
 	ldr	r5, [r5]
-	ldr	r6, =peg2	@ pass peg2
+	ldr	r6, =peg2	@ asignar peg2 a r6
 	ldr	r6, [r6]
-	ldr	r7, =peg3	@ pass peg3
+	ldr	r7, =peg3	@ asignar peg3 a r7
 	ldr	r7, [r7]
-	bl	moveDisks	@ call moveDisks( n, peg1, peg2, peg3 )
+	bl	moveDisks	@ llamada a moveDisks( n, peg1, peg2, peg3 )
 
 	
-@ return to OS	
-        pop 	{ip, pc}	@ pop return address into pc
+@ rgreso al so
+        pop 	{ip, pc}	@ recuperamos registros
