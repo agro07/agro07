@@ -1,7 +1,7 @@
 /*
 	3.6 Ejercicios
 	
-	mensaje_replica.s
+	msj_rep.s / teclado.s
 	Programa corto que obtiene la entrada del teclado y luego lo imprime de nuevo en la pantalla.
 	
 	Autor	Guerrero Montaño Alonso E. - 18211240
