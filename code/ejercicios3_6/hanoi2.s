@@ -17,7 +17,7 @@
 prompt:	.asciz	"How many disk do you want to move? "
 format:	.asciz	"%d"	
 string: .asciz  "move disk from %c to %c\n\0"
-peg1:	.int	'A'		@ vlavijas
+peg1:	.int	'A'		@ clavijas
 peg2:	.int	'B'
 peg3:	.int	'C'
 n:	.int	4		@ número de discos a mover
